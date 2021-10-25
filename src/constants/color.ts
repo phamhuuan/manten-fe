@@ -1,0 +1,30 @@
+export default class Color {
+	static readonly BLURPLE = '#7289DA';
+	static readonly FULL_WHITE = '#FFFFFF';
+	static readonly DARK_BUT_NOT_BLACK = '#2C2F33';
+	static readonly NOT_QUITE_BLACK = '#23272A';
+	static readonly CRIMSON = '#DC143C';
+	static readonly DARK_SALMON = '#E9967A';
+	static readonly LIGHT_CORAL = '#F08080';
+	static readonly PINK = '#FFC0CB';
+	static readonly HOT_PINK = '#FF69B4';
+	static readonly DEEP_PINK = '#FF1493';
+	static readonly TOMATO = '#FF6347';
+	static readonly GOLD = '#FFD700';
+	static readonly LEMONCHIFFON = '#FFFACD';
+	static readonly PAPAYAWHIP = '#FFEFD5';
+	static readonly MOCCASIN = '#FFE4B5';
+	static readonly DARKKHAKI = '#BDB76B';
+	static readonly VIOLET = '#EE82EE';
+	static readonly MEDIUMORCHID = '#BA55D3';
+	static readonly INDIGO = '#4B0082';
+	static readonly SLATEBLUE = '#6A5ACD';
+	static readonly CHARTREUSE = '#7FFF00';
+	static readonly SEAGREEN = '#2E8B57';
+	static readonly AQUA = '#00FFFF';
+	static readonly STEELBLUE = '#4682B4';
+	static readonly MAROON = '#800000';
+	static readonly TEAL = '#008080';
+	static readonly MIDNIGHTBLUE = '#191970';
+	static readonly CHOCOLATE = '#D2691E';
+}
