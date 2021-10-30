@@ -4,11 +4,14 @@ import {help as helpHandler} from './common/help';
 import {ping as pingHandler} from './common/ping';
 import {prefix as prefixHandler} from './common/prefix';
 import {answer as answerHandler} from './fe/answer';
+import {choose as chooseHandler} from './fe/choose';
 import {getCurrentQuestion as getCurrentQuestionHandler} from './fe/getCurrentQuestion';
 import {getQuestion as getQuestionHandler} from './fe/getQuestion';
-import {translateQuestion as translateQuestionHandler} from './fe/translateQuestion';
-import {prev as getPreviousQuestionHandler} from './fe/prev';
 import {next as getNextQuestionHandler} from './fe/next';
+import {prev as getPreviousQuestionHandler} from './fe/prev';
+import {reset as resetHandler} from './fe/reset';
+import {result as resultHandler} from './fe/result';
+import {translateQuestion as translateQuestionHandler} from './fe/translateQuestion';
 
 const handleCommand = (message: Message, prefix: string) => {
 	const args: string[] =
@@ -56,6 +59,15 @@ const handleCommand = (message: Message, prefix: string) => {
 		case Command.NEXT:
 		case Command.NEXT_1:
 			return getNextQuestionHandler(message);
+		case Command.CHOOSE:
+		case Command.CHOOSE_1:
+			return chooseHandler(message, paramMessage);
+		case Command.RESULT:
+		case Command.RESULT_1:
+			return resultHandler(message);
+		case Command.RESET:
+		case Command.RESET_1:
+			return resetHandler(message);
 	}
 };
 

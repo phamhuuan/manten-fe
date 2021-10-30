@@ -26,7 +26,6 @@ export default class PrefixData {
 
 	public static async getPrefixes() {
 		const prefixes: PrefixDocument[] = await Prefix.find();
-		console.log('prefixes', prefixes);
 		this.setPrefixes(
 			prefixes.reduce((acc: Prefixes, cur: PrefixDocument) => {
 				acc[cur.guildId] = cur.prefix;

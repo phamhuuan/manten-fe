@@ -35,4 +35,13 @@ export default class Command {
 
 	public static readonly NEXT: string = 'next';
 	public static readonly NEXT_1: string = `${prefix}next`;
+
+	public static readonly RESET: string = 'reset';
+	public static readonly RESET_1: string = `${prefix}reset`;
+
+	public static readonly CHOOSE: string = 'choose';
+	public static readonly CHOOSE_1: string = `${prefix}choose`;
+
+	public static readonly RESULT: string = 'result';
+	public static readonly RESULT_1: string = `${prefix}result`;
 }
